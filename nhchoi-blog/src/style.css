@@ -1,5 +1,27 @@
 /* CSS Custom Properties Definitions */
 
+@font-face {
+  font-family: 'MinSans-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SUITE-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HS-Regular';
+  src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/HS-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 :root {
   --maxWidth-none: "none";
   --maxWidth-xs: 20rem;
@@ -27,11 +49,11 @@
   --spacing-20: 5rem;
   --spacing-24: 6rem;
   --spacing-32: 8rem;
-  --fontFamily-sans: "MontserratVariable", system-ui, -apple-system,
+  --fontFamily-sans: "SUITE-Regular", system-ui, -apple-system,
     BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Noto Color Emoji";
-  --fontFamily-serif: "Merriweather", "Georgia", Cambria, "Times New Roman",
+  --fontFamily-serif: "SUITE-Regular", "Georgia", Cambria, "Times New Roman",
     Times, serif;
   --font-body: var(--fontFamily-serif);
   --font-heading: var(--fontFamily-sans);
@@ -253,6 +275,7 @@ a:focus {
 }
 
 .main-heading {
+  font-family: 'HS-Regular', sans-serif;
   font-size: var(--fontSize-7);
   margin: 0;
 }
@@ -278,8 +301,8 @@ a:focus {
 }
 
 .header-link-home {
+  font-family: 'HS-Regular', sans-serif;
   font-weight: var(--fontWeight-bold);
-  font-family: var(--font-heading);
   text-decoration: none;
   font-size: var(--fontSize-2);
 }
